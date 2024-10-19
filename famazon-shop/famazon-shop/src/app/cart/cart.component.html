@@ -1,0 +1,16 @@
+<div class="container">
+  <h1 class="text-center">Your Cart</h1>
+  <ul class="list-group">
+    <li
+      *ngFor="let item of cart"
+      class="list-group-item d-flex justify-content-between align-items-center"
+    >
+      {{ item.name }} - {{ item.price | currency }}
+      <button class="btn btn-danger btn-sm">Remove</button>
+    </li>
+  </ul>
+  <div class="mt-4 text-right">
+    <h4>Total: {{ total | currency }}</h4>
+    <button class="btn btn-success">Checkout</button>
+  </div>
+</div>

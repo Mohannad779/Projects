@@ -1,0 +1,83 @@
+/* Custom styles for additional tweaks */
+.bg-image {
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: white;
+    text-align: center;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 100px 0;
+  }
+  
+  .navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  .navbar-nav .nav-link {
+    font-size: 1.1rem;
+  }
+  
+  .card {
+    margin-bottom: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-img-top {
+    height: 200px;
+    object-fit: contain;
+    width: 100%;
+  }
+  
+  .card .card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  
+  .card .card-text {
+    font-size: 0.95rem;
+    color: #6c757d;
+  }
+  
+  .priority-badge {
+    width: 35px;
+    height: 35px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 1.1rem;
+    color: white;
+  }
+  
+  .card .btn {
+    width: 48%;
+  }
+  
+  footer {
+    background-color: #343a40;
+  }
+  
+  footer a {
+    font-size: 1.5rem;
+  }
+  
+  footer form input {
+    max-width: 300px;
+  }
+  
+  footer p {
+    margin-top: 15px;
+    color: #adb5bd;
+  }
+  

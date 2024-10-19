@@ -1,0 +1,75 @@
+/* Apply a global font-family for a more elegant feel */
+html, body {
+    height: 100%; /* Make sure the body and html take up the full viewport height */
+    margin: 0;    /* Remove default margins */
+}
+
+body {
+    font-family: 'Lora', serif; /* Consider adding a Google Font for more elegance */
+    background-color: #f8f9fa; /* Light grey background for a clean look */
+    display: flex;
+    flex-direction: column;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif; /* Add elegance to headings */
+}
+
+.navbar-brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+}
+
+.jumbotron {
+    background: url('assets/hero-image.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.jumbotron h1 {
+    font-size: 4rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.jumbotron p {
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.btn-lg {
+    padding: 0.75rem 2rem;
+    margin-right: 1rem;
+}
+
+.container {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.card-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+}
+
+app-root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;  /* Minimum height to ensure it covers the viewport */
+}
+
+.router-outlet {
+    flex-grow: 1;  /* Ensure the main content takes up available space */
+}
+
+.footer {
+    background-color: #343a40;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+    margin-top: auto; /* This will push the footer to the bottom */
+    width: 100%;
+}

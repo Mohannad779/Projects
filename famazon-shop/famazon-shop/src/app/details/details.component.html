@@ -1,0 +1,11 @@
+<div class="container">
+  <h2>{{ product.name }}</h2>
+  <img [src]="product.image" alt="{{ product.name }}" class="img-fluid" />
+  <p>{{ product.description }}</p>
+  <p>
+    <strong>Price: {{ product.price | currency }}</strong>
+  </p>
+  <button class="btn btn-success" (click)="addToCart(product)">
+    Add to Cart
+  </button>
+</div>

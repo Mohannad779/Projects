@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Blog</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Food Blog</h1>
+      <div class="sidenav">
+        <a href="./recipe.html">Recipe of the month</a> <a href="#">Recipes </a>
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+      <nav class="options">
+        <a href="#">Pasta</a>
+        <a href="#">Taco</a>
+        <a href="#">Pizza</a>
+        <a href="#">Dessert</a>
+        <a href="#">Breakfast</a>
+        <a href="#">Lunch</a>
+        <a href="#">Dinner</a>
+      </nav>
+    </header>
+    <!-- Swiper -->
+  <div class="swiper mySwiper animate__animated animate__bounce__anim" >
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="https://cdn.pixabay.com/photo/2023/05/30/16/57/taco-8029161_1280.png" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://cdn.pixabay.com/photo/2023/05/30/16/56/food-8029158_640.png" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://cdn.pixabay.com/photo/2013/07/12/19/20/sushi-154590_640.png" />
+      </div>
+    <div class="swiper-pagination"></div>
+  </div>
+    <main>
+      <div class="grid-container">
+        <div class="grid-item">
+          <img src="./Photos/pizza.jpg" alt="Pizza" />
+          <div class="overlay-text">Pizza</div>
+        </div>
+        <div class="grid-item">
+          <img src="./Photos/burger.jpg" alt="Hamburger" />
+          <div class="overlay-text">Hamburger</div>
+        </div>
+        <div class="grid-item">
+          <img src="./Photos/Toast.jpg" alt="Toast" />
+          <div class="overlay-text">Toast</div>
+        </div>
+        <div class="grid-item">
+          <img src="./Photos/Salmon.jpg" alt="Salmon" />
+          <div class="overlay-text">Salmon</div>
+        </div>
+        <div class="grid-item">
+          <img src="./Photos/Pasta.jpg" alt="Pasta" />
+          <div class="overlay-text">Pasta</div>
+        </div>
+        <div class="grid-item">
+          <img src="./Photos/Egg salad.jpg" alt="Egg Salad" />
+          <div class="overlay-text">Egg Salad</div>
+        </div>
+        <div class="grid-item">
+          <img src="./Photos/Fish.jpg" alt="Fish" />
+          <div class="overlay-text">Fish</div>
+        </div>
+        <div class="grid-item">
+          <img src="./Photos/Food.jpg" alt="Food" />
+          <div class="overlay-text">Food</div>
+        </div>
+        <div class="grid-item">
+          <img src="./Photos/pancakes.jpg" alt="Pancakes" />
+          <div class="overlay-text">Pancakes</div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <nav>
+        <a href="about.html">About</a>
+        <p>|</p>
+        <a href="#">Recipes</a>
+        <p>|</p>
+        <a href="#">FAQ</a>
+        <p>|</p>
+        <a href="https://codefactory.wien/en/contact-en/">Contact us</a>
+      </nav>
+      <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-github"></i>
+      </div>
+
+      <p>&copy; CodeFactory 2023</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

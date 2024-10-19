@@ -1,0 +1,29 @@
+<div class="container">
+  <h1 class="text-center">Our Specials</h1>
+  <div class="row">
+    <div *ngFor="let item of menuItems" class="col-md-4 mb-4">
+      <div class="card h-100">
+        <img [src]="item.image" class="card-img-top" alt="{{ item.name }}" />
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">{{ item.name }}</h5>
+          <p class="card-text">{{ item.description }}</p>
+          <p>
+            <strong>{{ item.price | currency }}</strong>
+          </p>
+          <div class="mt-auto">
+            <button
+              *ngIf="item.available"
+              class="btn btn-primary btn-block"
+              (click)="addToCart(item)"
+            >
+              Order
+            </button>
+            <p *ngIf="!item.available" class="text-danger">
+              This product is not available.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

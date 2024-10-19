@@ -1,0 +1,12 @@
+<div class="container">
+  <h1>Your Cart</h1>
+  <ul>
+    <li *ngFor="let item of cart">
+      {{ item.name }} - {{ item.price | currency }}
+    </li>
+  </ul>
+  <p>
+    <strong>Total: {{ total | currency }}</strong>
+  </p>
+  <button class="btn btn-primary">Purchase</button>
+</div>
